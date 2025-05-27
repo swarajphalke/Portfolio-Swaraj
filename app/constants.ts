@@ -2,7 +2,7 @@ export const ProjectsData = [
   {
     id: 1,
     type: "Personal Project",
-    name: "Code Reviewer - GPT",
+    name: "Code Reviewer",
     tech: [
       "OpenAI",
       "NodeJS",
@@ -26,8 +26,8 @@ export const ProjectsData = [
       "It uses OpenAI GPT to generate instant feedback, suggest improvements, and identify bugs.",
     ],
     links: {
-      live: "https://code-reviewer-hazel.vercel.app/",
-      github: "https://github.com/swarajphalke/Code-Reviewer",
+      live: "https://code-reviewerx.vercel.app/",
+      github: "https://code-reviewerx.vercel.app/",
     },
     image: "code-reviewer-gpt.png",
   },
@@ -55,30 +55,30 @@ export const ProjectsData = [
       "Features a dynamic UI with seamless integration of React and REST API for smooth user interaction.",
     ],
     links: {
-      live: "https://gemini-clone-xi-one.vercel.app/",
-      github: "https://github.com/swarajphalke/gemini-clone",
+      live: "https://gemini-ui-replica.vercel.app/",
+      github: "https://github.com/swarajphalke/Gemini-UI-Replica",
     },
     image: "gemini-clone-ui.png",
   },
   {
     id: 3,
     type: "Personal Project",
-    name: "Weather Forecasting App",
+    name: "Forecast App",
     tech: ["Rest Api", "ReactJS", "Material-ui"],
     description: [
       "A weather app built with React and REST APIs, featuring real-time weather updates for any location.",
       " Provides a clean, responsive interface with dynamic data fetching and seamless user experience.",
     ],
     links: {
-      live: "https://weather-app-brown-psi.vercel.app/",
-      github: "https://github.com/swarajphalke/Weather-App",
+      live: "https://forecast-appx.vercel.app/",
+      github: "https://github.com/swarajphalke/Forecast-App",
     },
     image: "weather-forecasting-app.png",
   },
   {
     id: 4,
     type: "Personal Project",
-    name: "Lottery Game",
+    name: "Lottery Simulator",
     tech: [
       // "NextJS",
       // "Tailwind Css",
@@ -93,15 +93,15 @@ export const ProjectsData = [
       "Features random number generation and user-friendly design.",
     ],
     links: {
-      live: "https://lottery-game-zeta.vercel.app/",
-      github: "https://github.com/swarajphalke/Lottery-Game",
+      live: "https://lottery-simulatorx.vercel.app/",
+      github: "https://github.com/swarajphalke/Lottery-Simulator",
     },
     image: "lottery-game.png",
   },
   {
     id: 5,
     type: "Personal Project",
-    name: "Todo List App",
+    name: "React Todo App",
     tech: [
       // "NextJS",
       // "Tailwind Css",
@@ -119,15 +119,15 @@ export const ProjectsData = [
       "Features real-time updates with add, edit, and delete functionality.",
     ],
     links: {
-      live: "https://tudo-list.vercel.app/",
-      github: "https://github.com/swarajphalke/TudoList",
+      live: "https://react-todo-appx.vercel.app/",
+      github: "https://github.com/swarajphalke/React-Todo-App",
     },
     image: "todo-list-app.png",
   },
   {
     id: 6,
     type: "Personal Project",
-    name: "Note Taking App",
+    name: "Note Taker",
     tech: [
       "HTML",
       "CSS",
@@ -140,8 +140,8 @@ export const ProjectsData = [
       "Simple design with real-time updates and optional browser storage.",
     ],
     links: {
-      live: "https://note-app-ruby-nu.vercel.app/",
-      github: "https://github.com/swarajphalke/NOTE-APP",
+      live: "https://note-takerx.vercel.app/",
+      github: "https://github.com/swarajphalke/Note-Taker",
     },
     image: "note-taking-app.png",
   },
