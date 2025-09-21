@@ -69,7 +69,7 @@ const Work = () => {
             {/* Close Button */}
             <button
               onClick={handleCloseModal}
-              className="absolute top-3 right-3 text-white text-2xl font-bold hover:text-purple-500 transition"
+              className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-3xl sm:text-2xl font-bold hover:text-purple-500 transition bg-black/40 hover:bg-black/60 rounded-full w-9 h-9 flex items-center justify-center"
             >
               &times;
             </button>

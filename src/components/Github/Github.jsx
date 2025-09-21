@@ -32,7 +32,7 @@ const Github = () => {
 
       <div className="flex justify-center">
         <div className="relative group rounded-2xl bg-gradient-to-r from-purple-600/30 via-transparent to-pink-600/30 p-[2px] sm:p-[3px] shadow-[0_0_20px_rgba(130,69,236,0.4)] hover:shadow-[0_0_35px_rgba(130,69,236,0.6)] transition-all duration-300 w-full max-w-full md:max-w-[90%]">
-          <div className="rounded-2xl bg-[#0a0a1a] sm:text-white p-3 sm:p-6">
+          <div className="rounded-2xl bg-[#0a0a1a] text-slate-200 p-3 sm:p-6">
             <GitHubCalendar
               username={username}
               blockSize={14}
