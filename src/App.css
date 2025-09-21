@@ -1,0 +1,67 @@
+/* General text styles */
+.react-activity-calendar text {
+  fill: rgba(255, 255, 255, 0.7) !important; /* faint white text */
+  font-weight: 400; /* reduced from 500 */
+  font-size: 14px;
+}
+
+/* Specific text styles for month and weekday labels */
+.react-activity-calendar text.month,
+.react-activity-calendar text.weekday {
+  fill: #c77dff !important; /* purple text */
+  font-weight: 400; /* lighter */
+}
+
+/* Contributions count (e.g., "696 contributions in the last year") */
+.react-activity-calendar__count {
+  color: rgba(255, 255, 255, 0.8) !important; /* faint white */
+  font-size: 15px;
+  font-weight: 500; /* kept slightly bolder so it stands out */
+  text-align: center;
+}
+
+/* Links (Less, More) */
+.react-activity-calendar a {
+  fill: rgba(255, 255, 255, 0.7) !important; 
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-weight: 500; /* lighter than before */
+  text-decoration: none;
+}
+
+.react-activity-calendar a:hover {
+  fill: #ff9800 !important;
+  color: #ff9800 !important;
+}
+
+/* Legend text */
+.react-activity-calendar__legend text,
+.react-activity-calendar__legend span {
+  color: rgba(255, 255, 255, 0.6) !important;
+  fill: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 400; /* lighter */
+}
+
+.react-activity-calendar__legend span:hover {
+  color: #ff9800 !important;
+}
+
+/* Tooltip styling */
+.github-calendar-tooltip {
+  color: #ffffff !important;
+  background: rgba(90, 24, 154, 0.95) !important;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+
+/* Style "Less" and "More" labels inside the calendar */
+.react-activity-calendar text[href] {
+  fill: #c77dff !important;   /* purple text */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.react-activity-calendar text[href]:hover {
+  fill: #ff9800 !important;   /* orange on hover */
+}
