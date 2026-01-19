@@ -1,22 +1,33 @@
 import React from "react";
-import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  // Smooth scroll function
-  const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleClick = (id) => {
+    if (id === "certifications") {
+      navigate("/certifications");
+      return;
     }
+
+    // Scroll from other pages
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+      return;
+    }
+
+    // Scroll on homepage
+    const section = document.getElementById(id);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
-        {/* Name / Logo */}
         <h2 className="text-xl font-semibold text-purple-500">Swaraj Phalke</h2>
 
-        {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
             { name: "About", id: "about" },
@@ -24,10 +35,12 @@ const Footer = () => {
             { name: "Experience", id: "experience" },
             { name: "Projects", id: "projects" },
             { name: "Education", id: "education" },
+            { name: "Certifications", id: "certifications" },
+            { name: "Contact", id: "contact" },
           ].map((item, index) => (
             <button
               key={index}
-              onClick={() => handleScroll(item.id)}
+              onClick={() => handleClick(item.id)}
               className="hover:text-purple-500 text-sm sm:text-base my-1"
             >
               {item.name}
@@ -35,22 +48,11 @@ const Footer = () => {
           ))}
         </nav>
 
-        {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             { icon: <FaGithub />, link: "https://github.com/SwarajPhalke" },
-            {
-              icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/swaraj-phalke-b5539b220",
-            },
-            // {
-            //   icon: <FaTwitter />,
-            //   link: "https://twitter.com/CodingMaster6?s=09",
-            // },
-            {
-              icon: <FaInstagram />,
-              link: "https://www.instagram.com/swarajphalke_/",
-            },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/swaraj-phalke-b5539b220" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/swarajphalke_/" },
           ].map((item, index) => (
             <a
               key={index}
@@ -64,10 +66,7 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
-          © 2025 Swaraj Phalke. All rights reserved.
-        </p>
+        <p className="text-sm text-gray-400 mt-6">© 2025 Swaraj Phalke. All rights reserved.</p>
       </div>
     </footer>
   );
