@@ -4,12 +4,19 @@ const Github = () => {
   const theme = {
     dark: ["#1a1a2e", "#5a189a", "#7b2cbf", "#9d4edd", "#c77dff"],
   };
-  const filterThisYear = (data) => {
-    const currentYear = new Date().getFullYear();
+  // const filterThisYear = (data) => {
+  //   const currentYear = new Date().getFullYear();
+  //   return data.filter(
+  //     (activity) => new Date(activity.date).getFullYear() === currentYear
+  //   );
+  // };
+  const filterLastYear = (data) => {
+    const lastYear = new Date().getFullYear() - 1;
     return data.filter(
-      (activity) => new Date(activity.date).getFullYear() === currentYear
+      (activity) => new Date(activity.date).getFullYear() === lastYear,
     );
   };
+
   return (
     <section
       id="github"
@@ -41,7 +48,8 @@ const Github = () => {
               fontSize={14}
               theme={theme}
               showWeekdayLabels
-              transformData={filterThisYear}
+              transformData={filterLastYear}
+              // transformData={filterThisYear}
             />{" "}
           </div>{" "}
         </div>{" "}
