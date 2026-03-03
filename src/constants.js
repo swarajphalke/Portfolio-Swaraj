@@ -100,17 +100,7 @@ export const SkillsInfo = [
       { name: "Render", logo: renderLogo },
     ],
   },
-  {
-    title: "Concepts",
-    skills: [
-      { name: "OOP", logo: hashtagLogo },
-      { name: "MVC Architecture", logo: hashtagLogo },
-      { name: "Authentication & Authorization", logo: hashtagLogo },
-      { name: "SDLC", logo: hashtagLogo },
-      { name: "Responsive Design", logo: hashtagLogo },
-      { name: "SEO Optimization", logo: hashtagLogo },
-    ],
-  },
+  
 ];
 
 export const experiences = [
