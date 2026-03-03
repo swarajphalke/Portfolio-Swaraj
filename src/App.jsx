@@ -13,6 +13,8 @@ import Footer from "./components/Footer/Footer";
 import BlurBlob from "./components/BlurBlob";
 import Certifications from "./pages/Certifications";
 
+import Snowfall from "react-snowfall";
+
 // Home page
 const Home = () => (
   <>
@@ -29,6 +31,16 @@ const Home = () => (
 const App = () => {
   return (
     <div className="bg-[#050414] min-h-screen relative">
+      <Snowfall
+        snowflakeCount={200}
+        style={{
+          position: "fixed",
+          width: "100vw",
+          height: "100vh",
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      />
       <BlurBlob
         position={{ top: "35%", left: "20%" }}
         size={{ width: "30%", height: "40%" }}
