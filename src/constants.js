@@ -14,16 +14,22 @@ import expressjsLogo from "./assets/tech_logo/express.png";
 import mysqlLogo from "./assets/tech_logo/mysql.png";
 import mongodbLogo from "./assets/tech_logo/mongodb.png";
 import firebaseLogo from "./assets/tech_logo/firebase.png";
-import javaLogo from "./assets/tech_logo/java.png";
 import typescriptLogo from "./assets/tech_logo/typescript.png";
 import gitLogo from "./assets/tech_logo/git.png";
 import githubLogo from "./assets/tech_logo/github.png";
 import vscodeLogo from "./assets/tech_logo/vscode.png";
 import postmanLogo from "./assets/tech_logo/postman.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
-import csharpLogo from "./assets/tech_logo/csharp.png";
 import visualstudioLogo from "./assets/tech_logo/visualstudio.png";
 import renderLogo from "./assets/tech_logo/render.png";
+import aspnetcoreLogo from "./assets/tech_logo/aspnetcore.png";
+import aspnetmvcLogo from "./assets/tech_logo/aspnetmvc.png";
+import entityframeworkLogo from "./assets/tech_logo/entityframework.png";
+import signalrLogo from "./assets/tech_logo/signalr.png";
+import restapiLogo from "./assets/tech_logo/restapi.png";
+import jwtLogo from "./assets/tech_logo/jwt.png";
+import sqlserverLogo from "./assets/tech_logo/sqlserver.png";
+import hashtagLogo from "./assets/tech_logo/hashtag.png";
 
 // Experience Section Logo's
 import i_soft from "./assets/company_logo/i-soft.png";
@@ -51,9 +57,10 @@ export const SkillsInfo = [
       { name: "CSS", logo: cssLogo },
       { name: "SASS", logo: sassLogo },
       { name: "JavaScript", logo: javascriptLogo },
+      { name: "TypeScript", logo: typescriptLogo },
       { name: "React JS", logo: reactjsLogo },
-      { name: "Redux", logo: reduxLogo },
       { name: "Next JS", logo: nextjsLogo },
+      { name: "Redux", logo: reduxLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Material UI", logo: materialuiLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
@@ -62,20 +69,23 @@ export const SkillsInfo = [
   {
     title: "Backend",
     skills: [
+      { name: "ASP.NET Core", logo: aspnetcoreLogo },
+      { name: "ASP.NET MVC", logo: aspnetmvcLogo },
+      { name: "Entity Framework", logo: entityframeworkLogo },
+      { name: "SignalR", logo: signalrLogo },
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
-      { name: "MySQL", logo: mysqlLogo },
-      { name: "MongoDB", logo: mongodbLogo },
-      { name: "Firebase", logo: firebaseLogo },
+      { name: "REST APIs", logo: restapiLogo },
+      { name: "JWT", logo: jwtLogo },
     ],
   },
   {
-    title: "Languages",
+    title: "Databases",
     skills: [
-      { name: "Java", logo: javaLogo },
-      { name: "C-Sharp", logo: csharpLogo },
-      { name: "JavaScript", logo: javascriptLogo },
-      { name: "TypeScript", logo: typescriptLogo },
+      { name: "SQL Server", logo: sqlserverLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "Firebase", logo: firebaseLogo },
     ],
   },
   {
@@ -86,8 +96,19 @@ export const SkillsInfo = [
       { name: "VS Code", logo: vscodeLogo },
       { name: "Visual Studio", logo: visualstudioLogo },
       { name: "Postman", logo: postmanLogo },
-      { name: "Render", logo: renderLogo },
       { name: "Vercel", logo: vercelLogo },
+      { name: "Render", logo: renderLogo },
+    ],
+  },
+  {
+    title: "Concepts",
+    skills: [
+      { name: "OOP", logo: hashtagLogo },
+      { name: "MVC Architecture", logo: hashtagLogo },
+      { name: "Authentication & Authorization", logo: hashtagLogo },
+      { name: "SDLC", logo: hashtagLogo },
+      { name: "Responsive Design", logo: hashtagLogo },
+      { name: "SEO Optimization", logo: hashtagLogo },
     ],
   },
 ];
