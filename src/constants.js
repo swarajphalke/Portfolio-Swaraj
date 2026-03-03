@@ -27,6 +27,8 @@ import renderLogo from "./assets/tech_logo/render.png";
 
 // Experience Section Logo's
 import i_soft from "./assets/company_logo/i-soft.png";
+import profound from "./assets/company_logo/profound.png";
+import yamoons from "./assets/company_logo/yamoons.png";
 
 // Education Section Logo's
 import agceLogo from "./assets/education_logo/agce_logo.png";
@@ -114,6 +116,58 @@ export const experiences = [
       "Tailwind CSS",
       "JavaScript",
       "JQuery",
+    ],
+  },
+  {
+    id: 2,
+    img: profound,
+    role: "MERN Stack Trainee",
+    company: "Profound Edutech Private Limited",
+    date: "March 2025 - June 2025",
+    desc: "Completed Diploma in MERN Stack training, gaining hands-on experience in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Developed responsive front-end interfaces and RESTful APIs while following modern development practices and version control workflows.",
+    skills: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "JavaScript",
+      "REST API Development",
+      "Frontend Development",
+      "Backend Development",
+      "Git & Version Control",
+    ],
+  },
+  {
+    id: 3,
+    img: profound,
+    role: ".Net Core Trainee",
+    company: "Profound Edutech Private Limited",
+    date: "May 2025 - July 2025",
+    desc: "Completed training in .NET Core and ASP.NET Core, building secure and scalable web applications using C#. Gained hands-on experience in MVC architecture, REST API development, Entity Framework, and database integration while following modern coding standards.",
+    skills: [
+      ".NET Core",
+      "ASP.NET Core",
+      "C#",
+      "MVC Architecture",
+      "Entity Framework",
+      "REST API Development",
+      "SQL Server",
+      "Web Application Development",
+    ],
+  },
+  {
+    id: 4,
+    img: yamoons,
+    role: ".Net Developer Intern",
+    company: "Yamoons Software",
+    date: "July 2025 - January 2026",
+    desc: "Developed and deployed Billing Software using .NET, HTML, and CSS, improving billing efficiency by 35% and reducing manual errors by 40%. Successfully implemented and installed the solution for Ethicus Pose and 5+ clients, including Minnis Foods, ensuring 100% successful deployment and client satisfaction.",
+    skills: [
+      ".NET",
+      "ASP.NET",
+      "C#",
+      "Billing Softwares",
+      "Client Implementation",
     ],
   },
 ];
