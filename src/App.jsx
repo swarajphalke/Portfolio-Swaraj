@@ -31,7 +31,7 @@ const Home = () => (
 const App = () => {
   return (
     <div className="bg-[#050414] min-h-screen relative">
-      <Snowfall
+      {/* <Snowfall
         snowflakeCount={200}
         style={{
           position: "fixed",
@@ -40,7 +40,7 @@ const App = () => {
           zIndex: 0,
           pointerEvents: "none",
         }}
-      />
+      /> */}
       <BlurBlob
         position={{ top: "35%", left: "20%" }}
         size={{ width: "30%", height: "40%" }}
