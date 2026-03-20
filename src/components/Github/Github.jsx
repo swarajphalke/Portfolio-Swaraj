@@ -35,7 +35,7 @@ const Github = () => {
           My coding journey visualized through GitHub activity.{" "}
         </p>{" "}
       </div>{" "}
-      <div className="flex justify-center">
+      <div className="flex justify-center select-none">
         {" "}
         <div className="relative group rounded-2xl bg-gradient-to-r from-purple-600/30 via-transparent to-pink-600/30 p-[2px] sm:p-[3px] shadow-[0_0_20px_rgba(130,69,236,0.4)] hover:shadow-[0_0_35px_rgba(130,69,236,0.6)] transition-all duration-300 w-full max-w-full md:max-w-[90%]">
           {" "}

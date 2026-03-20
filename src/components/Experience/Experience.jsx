@@ -36,13 +36,13 @@ const Experience = () => {
               <img
                 src={experience.img}
                 alt={experience.company}
-                className="w-7 h-7 sm:w-8 sm:h-8 object-cover rounded-full"
+                className="w-7 h-7 sm:w-8 sm:h-8 object-cover rounded-full select-none"
               />
             </div>
 
             {/* Card */}
             <div
-              className={`relative w-full sm:max-w-sm mt-8 sm:mt-0 p-4 sm:p-6 rounded-xl shadow-lg border border-gray-700 bg-gray-900 hover:scale-[1.01] transition-transform duration-300 ${
+              className={`relative w-full sm:max-w-sm mt-8 sm:mt-0 p-4 sm:p-6 rounded-xl shadow-lg border border-gray-700 bg-gray-900 hover:scale-[1.01] transition-transform duration-300 select-none ${
                 index % 2 === 0 ? "sm:ml-16 text-left" : "sm:mr-16 text-left"
               }`}
             >

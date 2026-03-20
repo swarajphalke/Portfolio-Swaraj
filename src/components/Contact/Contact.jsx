@@ -12,15 +12,15 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_xh9zej7", // Replace with your EmailJS Service ID
-        "template_7g4cnsm", // Replace with your EmailJS Template ID
+        "service_xh9zej7", 
+        "template_7g4cnsm",  
         form.current,
-        "eyTP4r1sBX6hAaHhO" // Replace with your EmailJS Public Key
+        "eyTP4r1sBX6hAaHhO"  
       )
       .then(
         () => {
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset();  
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
@@ -64,7 +64,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Form */}
-      <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
+      <div className="mt-8 w-full max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700 select-none">
         <h3 className="text-xl font-semibold text-white text-center">
           Connect With Me <span className="ml-1">🚀</span>
         </h3>

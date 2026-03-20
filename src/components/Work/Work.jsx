@@ -23,7 +23,7 @@ const Work = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 select-none">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -63,7 +63,7 @@ const Work = () => {
       </div>
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 overflow-y-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4 overflow-y-auto select-none">
           {/* Modal Container */}
           <div className="relative bg-[#1a1a2e] rounded-xl shadow-2xl w-full max-w-xl mx-auto my-8">
             {/* Close Button */}
