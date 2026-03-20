@@ -48,6 +48,7 @@ import forecastLogo from "./assets/work_logo/forecast.png";
 import lotteryLogo from "./assets/work_logo/lottery.png";
 import todolistLogo from "./assets/work_logo/todo_list.png";
 import notetakerLogo from "./assets/work_logo/note_taker.png";
+import swarioLogo from "./assets/work_logo/swario.png";
 
 export const SkillsInfo = [
   {
@@ -216,6 +217,26 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Swario — Real-Time Chat App",
+    description:
+      "Swario is a full-stack real-time chat application that enables instant messaging using WebSockets. Built with ASP.NET Core and SignalR on the backend and React (Vite) on the frontend, it delivers seamless communication with features like live message updates, auto-reconnect, join/leave notifications, and message history. Designed with a clean UI and optimized for performance, it showcases how modern real-time systems work under the hood.",
+    image: swarioLogo,
+    tags: [
+      "ASP.NET Core",
+      "SignalR",
+      "WebSockets",
+      "React JS",
+      "Vite",
+      "JavaScript",
+      "C#",
+      "Real-Time Systems",
+      "Responsive UI",
+    ],
+    github: "https://github.com/swarajphalke/Swario-Real-Time-Chat",  
+    webapp: "https://swario-real-time-chat.vercel.app/",  
+  },
+  {
+    id: 1,
     title: "Code Reviewer",
     description:
       "Code Reviewer is a powerful and user-friendly AI-powered web application that helps developers instantly improve their code. Simply paste your code, and the app provides feedback, highlights bugs, suggests optimizations, and recommends best practices. Its intuitive interface makes it an essential tool for writing cleaner, efficient, and error-free code.",
@@ -235,7 +256,7 @@ export const projects = [
     webapp: "https://code-reviewerx.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Gemini Clone - UI",
     description:
       "A Gemini Clone UI built with React and REST APIs to replicate the design and flow of the original app. It features a clean and modern interface with responsive layouts, smooth navigation, and efficient component structure. The focus is on simplicity, usability, and providing a seamless user experience across devices.",
@@ -251,7 +272,7 @@ export const projects = [
     webapp: "https://gemini-ui-replica.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Forecast App",
     description:
       "A weather app built with React and REST APIs, providing real-time weather updates for any location. It offers a clean and responsive interface with dynamic data fetching to ensure accurate forecasts. The app ensures smooth navigation and a seamless user experience across different devices.",
@@ -269,7 +290,7 @@ export const projects = [
     webapp: "https://forecast-appx.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Lottery Simulator",
     description:
       "Developed a dynamic lottery game in React with an engaging and interactive user interface. The project features random number generation, smooth gameplay, and a user-friendly design that ensures accessibility. It provides an enjoyable experience for users while demonstrating core React concepts.",
@@ -279,7 +300,7 @@ export const projects = [
     webapp: "https://lottery-simulatorx.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "React Todo App",
     description:
       "A responsive to-do list app built with React for efficient task management. Users can add, edit, and delete tasks with real-time updates. The app features a clean, intuitive interface, ensuring smooth interaction and helping users stay organized across devices.",
@@ -289,7 +310,7 @@ export const projects = [
     webapp: "https://react-todo-appx.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Note Taker",
     description:
       "A responsive note-taking app built with HTML, CSS, and JavaScript for easy note organization. It features a simple interface, real-time updates, and optional browser storage, allowing users to quickly create, edit, and save notes across sessions.",
